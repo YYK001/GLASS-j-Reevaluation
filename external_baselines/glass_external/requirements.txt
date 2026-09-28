@@ -1,0 +1,16 @@
+# Runtime subset of official requirements.txt (ONNX export packages are not needed).
+# Install matching torch/torchvision separately, as documented in README.
+numpy==1.26.3
+imgaug==0.4.0
+timm==0.9.12
+tensorboard==2.15.1
+opencv-python-headless==4.10.0.84
+pandas==1.5.2
+openpyxl==3.0.10
+pillow==10.2.0
+scikit-image==0.22.0
+scikit-learn==1.4.0
+scipy==1.11.4
+matplotlib==3.8.2
+click==8.1.7
+tqdm==4.66.1

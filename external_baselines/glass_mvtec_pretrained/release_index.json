@@ -1,0 +1,112 @@
+{
+  "verified_date": "2026-09-28",
+  "folder_url": "https://drive.google.com/drive/folders/1Hjlr-CcXwnhWfrWUCJJCooBI_pMP4N1C",
+  "path_prefix": "results/models/backbone_0",
+  "entries": {
+    "bottle": [
+      {
+        "file_id": "1lwdgpG8u7MqoaNqyQn2fo0u0Gd7Qd8Db",
+        "filename": "ckpt_best_543.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "cable": [
+      {
+        "file_id": "153eHCetjGK30d3wU3Mir_IApVWgEy1Cp",
+        "filename": "ckpt_best_72.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "capsule": [
+      {
+        "file_id": "1J5kNCsyt9frM9nWA_x6K6vcqf2NfEygF",
+        "filename": "ckpt_best_56.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "carpet": [
+      {
+        "file_id": "1bNht25rvPjADjbd6m844ZB3JAFvHguDN",
+        "filename": "ckpt_best_431.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "grid": [
+      {
+        "file_id": "1ZuQxDlespjAQmerLOsIXw2we6tMJAile",
+        "filename": "ckpt_best_581.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "hazelnut": [
+      {
+        "file_id": "1otUn9YjxpgB51JHQxspvGVLlP_dsS71D",
+        "filename": "ckpt_best_182.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "leather": [
+      {
+        "file_id": "1TnB7aP6JQMqoxA3d1FzQA_gkifp1imgA",
+        "filename": "ckpt_best_119.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "metal_nut": [
+      {
+        "file_id": "16uUx_EXMNVk-G0APetbMVe0t1XI78dpJ",
+        "filename": "ckpt_best_5.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "pill": [
+      {
+        "file_id": "1Sif5D32PJ7w5TPKf2ySD0vtjS0BeG5Hh",
+        "filename": "ckpt_best_233.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "screw": [
+      {
+        "file_id": "1sUV4c8IssF89rTMo1uaSMjK8Hu5VB7JP",
+        "filename": "ckpt_best_139.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "tile": [
+      {
+        "file_id": "1s6p91LbJy6mPtwmlL4pxqWKVxO0aPo-G",
+        "filename": "ckpt_best_369.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "toothbrush": [
+      {
+        "file_id": "1EsBx26Ay8_21_4AoJP-LP3SKWWXKNuzV",
+        "filename": "ckpt_best_543.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "transistor": [
+      {
+        "file_id": "1GeUVIzyby35M3vHy5-CC2hX8Fsuf32FO",
+        "filename": "ckpt_best_52.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "wood": [
+      {
+        "file_id": "1iEyBlhvIRWS6l82f1Gg22imDYeMx7qOD",
+        "filename": "ckpt_best_637.pth",
+        "mime_type": "application/x-zip"
+      }
+    ],
+    "zipper": [
+      {
+        "file_id": "1fCaDTVeOT74W5mSoaWCa2E1mDf-0skcJ",
+        "filename": "ckpt_best_149.pth",
+        "mime_type": "application/x-zip"
+      }
+    ]
+  }
+}

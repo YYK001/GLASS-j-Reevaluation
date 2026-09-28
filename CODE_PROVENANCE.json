@@ -1,0 +1,239 @@
+[
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/checkpoints.py",
+    "export": "external_baselines/glass_mvtec_pretrained/checkpoints.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/data.py",
+    "export": "external_baselines/glass_mvtec_pretrained/data.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/README.md",
+    "export": "external_baselines/glass_mvtec_pretrained/README.md",
+    "mode": "standalone command paths and dependency documentation adapted"
+  },
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/release_index.json",
+    "export": "external_baselines/glass_mvtec_pretrained/release_index.json",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/runner.py",
+    "export": "external_baselines/glass_mvtec_pretrained/runner.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_mvtec_pretrained/__init__.py",
+    "export": "external_baselines/glass_mvtec_pretrained/__init__.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/backbones.py",
+    "export": "external_baselines/GLASS/backbones.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/common.py",
+    "export": "external_baselines/GLASS/common.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/glass.py",
+    "export": "external_baselines/GLASS/glass.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/loss.py",
+    "export": "external_baselines/GLASS/loss.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/main.py",
+    "export": "external_baselines/GLASS/main.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/metrics.py",
+    "export": "external_baselines/GLASS/metrics.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/model.py",
+    "export": "external_baselines/GLASS/model.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/perlin.py",
+    "export": "external_baselines/GLASS/perlin.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/utils.py",
+    "export": "external_baselines/GLASS/utils.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/datasets/mvtec.py",
+    "export": "external_baselines/GLASS/datasets/mvtec.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/LICENSE",
+    "export": "external_baselines/GLASS/LICENSE",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/official.py",
+    "export": "external_baselines/glass_external/official.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/source.json",
+    "export": "external_baselines/glass_external/source.json",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/requirements.txt",
+    "export": "external_baselines/glass_external/requirements.txt",
+    "mode": "unchanged"
+  },
+  {
+    "source": "DINOv3/MADEqual/mvtec_broad6_compose2/metrics.py",
+    "export": "DINOv3/MADEqual/mvtec_broad6_compose2/metrics.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "DINOv3/tests/test_glass_mvtec_pretrained.py",
+    "export": "DINOv3/tests/test_glass_mvtec_pretrained.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/adapter.py",
+    "export": "external_baselines/glass_external/adapter.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "MODEL_CONFIG",
+      "model_for"
+    ]
+  },
+  {
+    "source": "external_baselines/glass_external/runner.py",
+    "export": "external_baselines/glass_external/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "summarize"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
+    "export": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "_atomic_json",
+      "_atomic_npz",
+      "_read_csv",
+      "_write_csv"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/mvtec_task_decoupled/runner.py",
+    "export": "DINOv3/MADEqual/mvtec_task_decoupled/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "image_metrics"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/guided_validation/summary.py",
+    "export": "DINOv3/MADEqual/guided_validation/summary.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "is_na",
+      "mean_available"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/top9_vs_local/runner.py",
+    "export": "DINOv3/MADEqual/top9_vs_local/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "_new_output"
+    ]
+  },
+  {
+    "source": "DINOv3/relation_reliability/protocol.py",
+    "export": "DINOv3/relation_reliability/protocol.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "MVTEC_AD_CATEGORIES"
+    ]
+  },
+  {
+    "source": "DINOv3/relation_reliability/datasets.py",
+    "export": "DINOv3/relation_reliability/datasets.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "IMAGE_SUFFIXES",
+      "Record",
+      "_images",
+      "_mvtec_root",
+      "mvtec_ad_records"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/hard_sample_discrimination/scoring.py",
+    "export": "DINOv3/MADEqual/normal_reconstruction/scoring.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "fixed_fpr_diagnostics"
+    ]
+  },
+  {
+    "source": "DINOv2/nvs/conditional_nvs/metrics.py",
+    "export": "DINOv3/nsrm/_ranking_reference.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "pixel_aupr",
+      "safe_auroc"
+    ]
+  },
+  {
+    "source": "DINOv3/nsrm/m0_scoring.py",
+    "export": "DINOv3/nsrm/m0_scoring.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "NativeMaskContext",
+      "_CUDA_RANKING_LOCK",
+      "_GIB",
+      "_HOST_HISTOGRAM_HEADROOM_BYTES",
+      "_HOST_HISTOGRAM_MIN_HEADROOM_BYTES",
+      "_component_indices",
+      "_cuda_device_index",
+      "_cuda_float32_histogram_ranking_metrics_and_thresholds",
+      "_float32_ceiling_thresholds",
+      "_float32_from_order_keys",
+      "_host_available_memory_bytes",
+      "_integrate_aupro_curve",
+      "_pixel_aupro_native_lists",
+      "_pixel_aupro_native_torch_lists",
+      "_ranking_from_dense_float32_histograms",
+      "_read_integer_file",
+      "_torch_binary_ranking_metrics_and_thresholds",
+      "_torch_float32_order_keys",
+      "pixel_aupro_native_backend",
+      "pixel_ranking_metrics_and_thresholds",
+      "prepare_native_mask_context"
+    ]
+  },
+  {
+    "source": "DINOv3/tests/test_glass_btad_external.py",
+    "export": "DINOv3/tests/test_glass_btad_external.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "TinyBackbone",
+      "small_model"
+    ]
+  }
+]
