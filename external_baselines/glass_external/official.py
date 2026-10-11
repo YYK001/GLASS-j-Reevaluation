@@ -12,12 +12,12 @@ SOURCE = json.loads(Path(__file__).with_name('source.json').read_text(encoding='
 
 @lru_cache(None)
 def modules():
-    names = ('loss','model','common','metrics','utils','perlin','backbones','glass','mvtec')
+    names = ('loss','model','common','metrics','utils','perlin','backbones','glass','mvtec','visa')
     previous = {n:sys.modules.get(n) for n in names}
     loaded = {}
     try:
         for name in names:
-            path = ROOT/('datasets/mvtec.py' if name == 'mvtec' else name+'.py')
+            path = ROOT/('datasets/'+name+'.py' if name in ('mvtec','visa') else name+'.py')
             unique = __package__+'._official_'+name
             spec = importlib.util.spec_from_file_location(unique,path)
             module = importlib.util.module_from_spec(spec)

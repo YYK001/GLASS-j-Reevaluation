@@ -85,16 +85,6 @@
     "mode": "unchanged"
   },
   {
-    "source": "external_baselines/glass_external/official.py",
-    "export": "external_baselines/glass_external/official.py",
-    "mode": "unchanged"
-  },
-  {
-    "source": "external_baselines/glass_external/source.json",
-    "export": "external_baselines/glass_external/source.json",
-    "mode": "unchanged"
-  },
-  {
     "source": "external_baselines/glass_external/requirements.txt",
     "export": "external_baselines/glass_external/requirements.txt",
     "mode": "unchanged"
@@ -108,34 +98,6 @@
     "source": "DINOv3/tests/test_glass_mvtec_pretrained.py",
     "export": "DINOv3/tests/test_glass_mvtec_pretrained.py",
     "mode": "unchanged"
-  },
-  {
-    "source": "external_baselines/glass_external/adapter.py",
-    "export": "external_baselines/glass_external/adapter.py",
-    "mode": "selected definitions unchanged",
-    "definitions": [
-      "MODEL_CONFIG",
-      "model_for"
-    ]
-  },
-  {
-    "source": "external_baselines/glass_external/runner.py",
-    "export": "external_baselines/glass_external/runner.py",
-    "mode": "selected definitions unchanged",
-    "definitions": [
-      "summarize"
-    ]
-  },
-  {
-    "source": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
-    "export": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
-    "mode": "selected definitions unchanged",
-    "definitions": [
-      "_atomic_json",
-      "_atomic_npz",
-      "_read_csv",
-      "_write_csv"
-    ]
   },
   {
     "source": "DINOv3/MADEqual/mvtec_task_decoupled/runner.py",
@@ -234,6 +196,185 @@
     "definitions": [
       "TinyBackbone",
       "small_model"
+    ]
+  },
+  {
+    "source": "external_baselines/glass_visa/__init__.py",
+    "export": "external_baselines/glass_visa/__init__.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/__main__.py",
+    "export": "external_baselines/glass_visa/__main__.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/cli.py",
+    "export": "external_baselines/glass_visa/cli.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/data.py",
+    "export": "external_baselines/glass_visa/data.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/protocol.py",
+    "export": "external_baselines/glass_visa/protocol.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/README.md",
+    "export": "external_baselines/glass_visa/README.md",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/requirements.txt",
+    "export": "external_baselines/glass_visa/requirements.txt",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/runner.py",
+    "export": "external_baselines/glass_visa/runner.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/tests/__init__.py",
+    "export": "external_baselines/glass_visa/tests/__init__.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/tests/test_local.py",
+    "export": "external_baselines/glass_visa/tests/test_local.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_visa/tests/test_runtime.py",
+    "export": "external_baselines/glass_visa/tests/test_runtime.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "DINOv3/MADEqual/visa_task_decoupled/dataset.py",
+    "export": "DINOv3/MADEqual/visa_task_decoupled/dataset.py",
+    "mode": "whitespace-only normalized"
+  },
+  {
+    "source": "external_baselines/glass_external/official.py",
+    "export": "external_baselines/glass_external/official.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/source.json",
+    "export": "external_baselines/glass_external/source.json",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/datasets/visa.py",
+    "export": "external_baselines/GLASS/datasets/visa.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/datasets/excel/visa_distribution.xlsx",
+    "export": "external_baselines/GLASS/datasets/excel/visa_distribution.xlsx",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/shell/run-visa.sh",
+    "export": "external_baselines/GLASS/shell/run-visa.sh",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/GLASS/README.md",
+    "export": "external_baselines/GLASS/README.md",
+    "mode": "whitespace-only normalized"
+  },
+  {
+    "source": "external_baselines/patchcore_official_eval/storage.py",
+    "export": "external_baselines/patchcore_official_eval/storage.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "tools/kaggle_glass_visa.py",
+    "export": "tools/kaggle_glass_visa.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "tools/test_glass_visa_setup.py",
+    "export": "tools/test_glass_visa_setup.py",
+    "mode": "unchanged"
+  },
+  {
+    "source": "external_baselines/glass_external/adapter.py",
+    "export": "external_baselines/glass_external/adapter.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "PROTOCOL",
+      "MODEL_CONFIG",
+      "working_directory",
+      "model_for",
+      "ScalarLog",
+      "train_last",
+      "load_last"
+    ]
+  },
+  {
+    "source": "external_baselines/glass_external/runner.py",
+    "export": "external_baselines/glass_external/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "cuda",
+      "loader",
+      "summarize"
+    ]
+  },
+  {
+    "source": "external_baselines/glass_external/data.py",
+    "export": "external_baselines/glass_external/data.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "geometry",
+      "map_to_evaluation"
+    ]
+  },
+  {
+    "source": "external_baselines/patchcore_official_eval/protocol.py",
+    "export": "external_baselines/patchcore_official_eval/protocol.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "CATEGORIES",
+      "BTAD_COUNTS",
+      "evaluation_hw"
+    ]
+  },
+  {
+    "source": "external_baselines/patchcore_official_eval/data.py",
+    "export": "external_baselines/patchcore_official_eval/data.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "records",
+      "metadata",
+      "evaluation_mask"
+    ]
+  },
+  {
+    "source": "external_baselines/patchcore_official_eval/evaluation.py",
+    "export": "external_baselines/patchcore_official_eval/evaluation.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "calculate",
+      "summarize"
+    ]
+  },
+  {
+    "source": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
+    "export": "DINOv3/MADEqual/mvtec_broad6_compose2/runner.py",
+    "mode": "selected definitions unchanged",
+    "definitions": [
+      "_write_csv",
+      "_read_csv",
+      "_atomic_json",
+      "_atomic_npz",
+      "_load_mask"
     ]
   }
 ]

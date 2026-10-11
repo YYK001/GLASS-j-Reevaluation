@@ -6,6 +6,7 @@
   "license_file": "../GLASS/LICENSE",
   "acquisition": "GitHub commit archive via HTTPS; no Git operations",
   "local_changes": [
-    "glass.py: trainer adds final_only=False; with True, skip ckpt_best early return and periodic test evaluation/best selection. All training operations and per-epoch ckpt.pth save remain unchanged."
+    "glass.py: trainer adds final_only=False; with True, skip ckpt_best early return and periodic test evaluation/best selection. All training operations and per-epoch ckpt.pth save remain unchanged.",
+    "datasets/visa.py: extract original foreground filename expression into foreground_mask_path(image_path). Default path unchanged; VisA adapter overrides only this path hook. Image transforms, foreground transforms and synthesis unchanged."
   ]
 }

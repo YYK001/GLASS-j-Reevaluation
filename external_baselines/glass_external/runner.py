@@ -1,7 +1,23 @@
-# Exported shared helpers; function bodies unchanged. See CODE_PROVENANCE.json.
+# Exported shared helpers; bodies unchanged. See CODE_PROVENANCE.json.
 import numpy as np
+import torch
+from torch.utils.data import DataLoader
 from DINOv3.MADEqual.mvtec_broad6_compose2.metrics import METRIC_NAMES
 from DINOv3.MADEqual.guided_validation.summary import mean_available
+
+def cuda(name):
+    d=torch.device(name)
+    if d.type!='cuda' or not torch.cuda.is_available(): raise RuntimeError('GLASS formal/smoke execution requires CUDA')
+    if d.index is None: d=torch.device('cuda',torch.cuda.current_device())
+    torch.cuda.set_device(d)
+    return d
+
+
+def loader(dataset, workers, *, training):
+    kw=dict(batch_size=8,shuffle=training,num_workers=workers,pin_memory=True,drop_last=False)
+    if workers: kw['prefetch_factor']=2
+    return DataLoader(dataset,**kw)
+
 
 def summarize(metrics, operating, expected):
     if len(metrics)!=len(expected) or {r['category'] for r in metrics}!=set(expected):

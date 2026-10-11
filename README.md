@@ -2,7 +2,7 @@
 
 Independent re-evaluation of **officially released GLASS-j checkpoints on MVTec AD**, with unified metrics and an optional matched-field-of-view comparison.
 
-This repository contains code only: no datasets, model weights, predictions, training logs, or experimental result reports. It does not train GLASS or claim that the published checkpoints are fixed-final-epoch models.
+This repository contains code only: no datasets, model weights, predictions, training logs, or experimental result reports. The original MVTec AD entry evaluates released checkpoints; the independent VisA entry trains official GLASS-j and evaluates the fixed final epoch. Published MVTec checkpoints are not claimed to be fixed-final-epoch models.
 
 ## What is included
 
@@ -15,7 +15,23 @@ This repository contains code only: no datasets, model weights, predictions, tra
 
 The retained `DINOv3/` namespace contains only the small shared data/metric/I/O support and tests needed by this evaluator. It does not load a DINO model, retrieve a memory bank, or include the wider experimental workspace. Shared helper function bodies were exported unchanged; see [CODE_PROVENANCE.json](CODE_PROVENANCE.json).
 
-## Setup and usage
+## VisA official training with fixed-final reevaluation
+
+The independent `external_baselines/glass_visa/` entry supports `check`, `smoke`, `train`, `evaluate` and `summarize`. It reuses the official network, foreground-based synthesis, optimizers and epoch loop. It reads the raw VisA `split_csv/1cls.csv`, uses all normal training images, preserves `fg=1`, applies the official distribution workbook, and saves the fixed 640th epoch instead of choosing a checkpoint from test metrics.
+
+It preserves official image scores, saves native FP32 maps and maps them to the existing full-image H//4 × W//4 protocol with explicit crop-boundary extension. Metrics use the existing fast CUDA implementations. This is **GLASS-j 官方实现的 VisA 固定末轮复评**, not the paper's best-checkpoint protocol.
+
+See [the VisA guide](external_baselines/glass_visa/README.md) and [the complete Kaggle setup script](tools/kaggle_glass_visa.py). The script downloads resources on Kaggle only, extracts only the VisA foreground masks, checks all 12 classes, runs small integration tests and a real single-class smoke. Formal training is disabled by default; `--formal` enables the selected independent GPU groups (default: candle on GPU0, capsules on GPU1). It makes no unverified session-duration claim.
+
+```bash
+python tools/kaggle_glass_visa.py
+# After successful resource checks and smoke, explicitly select a formal batch:
+python tools/kaggle_glass_visa.py --formal --gpu0 candle --gpu1 capsules
+```
+
+The script targets a Kaggle Notebook with Internet enabled and T4 ×2 GPUs. It creates an independent Python3.10 environment. Already prepared DTD/foreground resources can be passed explicitly with `--dtd-root` and `--foreground-root`; foreground masks are separate from the real defect annotations.
+
+## MVTec AD released-checkpoint setup and usage
 
 Use Python 3.10 and a compatible PyTorch environment. For example:
 
@@ -39,3 +55,5 @@ Official GLASS retains its [MIT license](external_baselines/GLASS/LICENSE). This
 ## Validation
 
 Standalone export: 12 focused tests passed (9.85 seconds), including the small official-module CUDA check. Shared helper definitions were checked for AST equivalence to the development workspace. Python compilation and seven Bash command blocks passed static checks. These checks do not constitute a full-data MVTec evaluation.
+
+The preceding validation describes the original MVTec export revision. For this VisA extension, six Python-only tests and syntax/CLI checks pass; four runtime integration tests are skipped locally because the scientific environment is unavailable. The MVTec regression suite could not run locally without pytest/PyTorch. VisA resource layout, real WideResNet training, strict final reload, T4 memory/time and full-data evaluation remain to be verified on Kaggle. Added shared helper definitions are AST-identical to the development workspace; no experimental reports or outputs were exported.
